@@ -1,4 +1,4 @@
-"use strict";(self.webpackChunkkeiretsuproject=self.webpackChunkkeiretsuproject||[]).push([[6110],{2837:(e,t,r)=>{r.d(t,{$K:()=>l,CB:()=>p,Cd:()=>m,FC:()=>d,Jq:()=>x,R3:()=>y,SD:()=>n,Zw:()=>u,dN:()=>h,hJ:()=>b,mO:()=>i,mg:()=>s,nj:()=>w,pd:()=>v,uM:()=>f,vE:()=>a,z6:()=>c});var o=r(5464);const i=o.default.div`
+"use strict";(self.webpackChunkkeiretsuproject=self.webpackChunkkeiretsuproject||[]).push([[6110],{2837:(e,t,r)=>{r.d(t,{$K:()=>s,CB:()=>p,Cd:()=>m,FC:()=>d,Jq:()=>x,R3:()=>y,SD:()=>n,Zw:()=>u,dN:()=>b,hJ:()=>h,mO:()=>a,mg:()=>l,nj:()=>w,pd:()=>v,uM:()=>f,vE:()=>i,z6:()=>c});var o=r(5464);const a=o.default.div`
   input,
   textarea,
   select,
@@ -24,7 +24,7 @@
     box-shadow: none;
     border-color: inherit;
   }
-`,a=o.default.span`
+`,i=o.default.span`
   svg {
     width: 16px;
     height: 16px;
@@ -91,12 +91,12 @@
     border: none;
     font-size: 14px;
   }
-`,l=o.default.div`
+`,s=o.default.div`
   display: block;
   padding: 3rem 0; /* py-5 is 3rem top & bottom */
   background-color: #f3f5f7;
   min-height: 100vh;
-`,s=o.default.div`
+`,l=o.default.div`
   // display: none;
   background: #fff;
   border-radius: 0px;
@@ -448,7 +448,7 @@
     opacity: 0.5;
     cursor: not-allowed;
   }
-`),h=((0,o.default)(g)`
+`),b=((0,o.default)(g)`
   left: -60px;
 
   @media only screen and (max-width: 991.98px) {
@@ -462,7 +462,7 @@
   }
 `,o.default.sup`
   color: var(--primary-color);
-`),b=o.default.div`
+`),h=o.default.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -527,5 +527,5 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-`},8150:(e,t,r)=>{r.r(t),r.d(t,{default:()=>u});var o=r(5043),i=(r(5015),r(5136)),a=(r(8421),r(2837)),n=r(6178),d=r.n(n),l=r(7268),s=(r(3656),r(1173),r(4710)),p=r(6213),c=r(579);function u(){(0,l.ye)(d());const[e,t]=(0,o.useState)([]),[r,n]=(0,o.useState)("monthly"),[u,x]=(0,o.useState)(!1),[f,g]=(0,o.useState)(""),h=localStorage.getItem("UserLoginData"),b=JSON.parse(h);(0,o.useEffect)((()=>{v()}),[]);const[m,w]=(0,o.useState)([]),v=async()=>{try{var e;const t=(await p.A.post("https://blueprintcatalyst.com/api/user/getusersSubscriptionPlan",{user_id:b.id})).data.results;if(!t)return void console.error("No subscription data received");const r=[];t.dataroomOneTime&&r.push({name:"Dataroom One-Time",status:t.dataroomOneTime.status||"N/A",price:`\u20ac${t.dataroomOneTime.price}`,renewalDate:y(t.investorReporting.end_date)||"N/A",lastPayment:y(t.dataroomOneTime.start_date)||"N/A",features:["One-time access","Secure dataroom","No renewal"]}),t.investorReporting&&r.push({name:"Investor Reporting",status:t.investorReporting.status||"N/A",price:`\u20ac${t.investorReporting.price}`,renewalDate:y(t.investorReporting.end_date)||"N/A",lastPayment:y(t.investorReporting.start_date)||"N/A",features:["Monthly investor updates","Download reports","Analytics dashboard"]}),(null===(e=t.perInstancePurchases)||void 0===e?void 0:e.length)>0&&t.perInstancePurchases.forEach(((e,t)=>{r.push({name:`Per Instance #${t+1}`,status:e.payment_status||"N/A",price:`\u20ac${e.price}`,lastPayment:y(e.created_at)||"N/A",features:["One-time report","Single-use instance"]})})),w(r)}catch(t){console.error("Error fetching subscription plans:",t)}};function y(e){const t=new Date(e);if(isNaN(t))return"";const r=t.getDate(),o=["January","February","March","April","May","June","July","August","September","October","November","December"][t.getMonth()],i=t.getFullYear();return`${o} ${r}${(e=>{if(e>=11&&e<=13)return"th";switch(e%10){case 1:return"st";case 2:return"nd";case 3:return"rd";default:return"th"}})(r)}, ${i}`}return(0,c.jsx)(c.Fragment,{children:(0,c.jsx)(a.mO,{children:(0,c.jsxs)("div",{className:"fullpage d-block",children:[(0,c.jsx)(i.A,{}),(0,c.jsx)(a.$K,{className:"d-block py-5",children:(0,c.jsx)("div",{className:"container-lg",children:(0,c.jsxs)("div",{className:"row justify-content-center",children:[(0,c.jsx)("div",{className:"col-md-3",children:(0,c.jsx)(s.A,{})}),(0,c.jsxs)("div",{className:"col-md-9",children:[(0,c.jsx)("h2",{className:"mb-4",children:"Your Subscriptions"}),m.map(((e,t)=>{const r=e.renewalDate?e.renewalDate.replace(/(\d+)(st|nd|rd|th)/,"$1"):null,o=r?new Date(r):null,i=new Date,a=o&&o>=i?"Active":"Inactive";return(0,c.jsx)("div",{className:"card shadow-sm border-0 mb-4",children:(0,c.jsxs)("div",{className:"card-body",children:[(0,c.jsxs)("div",{className:"d-flex justify-content-between align-items-center mb-3",children:[(0,c.jsx)("h4",{children:e.name}),!e.name.includes("Per Instance")&&(0,c.jsx)("span",{className:"badge "+("Active"===a?"bg-success":"bg-secondary"),children:a})]}),(0,c.jsx)("p",{className:"text-muted",children:e.price}),!e.name.includes("Per Instance")&&(0,c.jsxs)("p",{children:[(0,c.jsx)("strong",{children:"Renewal Date:"})," ",e.renewalDate]}),(0,c.jsxs)("p",{children:[(0,c.jsx)("strong",{children:"Last Payment:"})," ",e.lastPayment]}),(0,c.jsx)("h6",{className:"mt-4",children:"Features:"}),(0,c.jsx)("ul",{children:e.features.map(((e,t)=>(0,c.jsx)("li",{children:e},t)))})]})},t)}))]})]})})})]})})})}}}]);
-//# sourceMappingURL=6110.55c26c4b.chunk.js.map
+`},8150:(e,t,r)=>{r.r(t),r.d(t,{default:()=>u});var o=r(5043),a=(r(5015),r(5136)),i=(r(8421),r(2837)),n=r(6178),d=r.n(n),s=r(7268),l=(r(3656),r(1173),r(4710)),p=r(6213),c=r(579);function u(){(0,s.ye)(d());const[e,t]=(0,o.useState)([]),[r,n]=(0,o.useState)("monthly"),[u,x]=(0,o.useState)(!1),[f,g]=(0,o.useState)(""),b=localStorage.getItem("UserLoginData"),h=JSON.parse(b);(0,o.useEffect)((()=>{v()}),[]);const[m,w]=(0,o.useState)([]),v=async()=>{try{var e;const t=(await p.A.post("https://blueprintcatalyst.com/api/user/getusersSubscriptionPlan",{user_id:h.id})).data.results;if(!t)return void console.error("No subscription data received");const r=[];t.dataroomOneTime&&r.push({name:"Dataroom One-Time",status:t.dataroomOneTime.status||"N/A",price:`\u20ac${t.dataroomOneTime.price}`,renewalDate:y(t.investorReporting.end_date)||"N/A",lastPayment:y(t.dataroomOneTime.start_date)||"N/A",features:["One-time access","Secure dataroom","No renewal"]}),t.investorReporting&&r.push({name:"Investor Reporting",status:t.investorReporting.status||"N/A",price:`\u20ac${t.investorReporting.price}`,renewalDate:y(t.investorReporting.end_date)||"N/A",lastPayment:y(t.investorReporting.start_date)||"N/A",features:["Monthly investor updates","Download reports","Analytics dashboard"]}),(null===(e=t.perInstancePurchases)||void 0===e?void 0:e.length)>0&&t.perInstancePurchases.forEach(((e,t)=>{r.push({name:`Per Instance #${t+1}`,status:e.payment_status||"N/A",price:`\u20ac${e.price}`,lastPayment:y(e.created_at)||"N/A",features:["One-time report","Single-use instance"]})})),console.log(t.academySubscription),t.academySubscription&&r.push({name:"International Entrepreneur Academy",status:t.academySubscription.status||"N/A",price:`\u20ac${t.academySubscription.price||0}`,lastPayment:y(t.academySubscription.created_at)||"N/A",features:["Access to all modules","One-time payment","Global entrepreneurship insights"]}),w(r)}catch(t){console.error("Error fetching subscription plans:",t)}};function y(e){const t=new Date(e);if(isNaN(t))return"";const r=t.getDate(),o=["January","February","March","April","May","June","July","August","September","October","November","December"][t.getMonth()],a=t.getFullYear();return`${o} ${r}${(e=>{if(e>=11&&e<=13)return"th";switch(e%10){case 1:return"st";case 2:return"nd";case 3:return"rd";default:return"th"}})(r)}, ${a}`}return(0,c.jsx)(c.Fragment,{children:(0,c.jsx)(i.mO,{children:(0,c.jsxs)("div",{className:"fullpage d-block",children:[(0,c.jsx)(a.A,{}),(0,c.jsx)(i.$K,{className:"d-block py-5",children:(0,c.jsx)("div",{className:"container-lg",children:(0,c.jsxs)("div",{className:"row justify-content-center",children:[(0,c.jsx)("div",{className:"col-md-3",children:(0,c.jsx)(l.A,{})}),(0,c.jsxs)("div",{className:"col-md-9",children:[(0,c.jsx)("h2",{className:"mb-4",children:"Your Subscriptions"}),m.map(((e,t)=>{const r=e.renewalDate?e.renewalDate.replace(/(\d+)(st|nd|rd|th)/,"$1"):null,o=r?new Date(r):null,a=new Date;let i;return i="International Entrepreneur Academy"===e.name||o&&o>=a?"Active":"Inactive",(0,c.jsx)("div",{className:"card shadow-sm border-0 mb-4",children:(0,c.jsxs)("div",{className:"card-body",children:[(0,c.jsxs)("div",{className:"d-flex justify-content-between align-items-center mb-3",children:[(0,c.jsx)("h4",{children:e.name}),!e.name.includes("Per Instance")&&(0,c.jsx)("span",{className:"badge "+("Active"===i?"bg-success":"bg-secondary"),children:i})]}),(0,c.jsx)("p",{className:"text-muted",children:e.price}),!e.name.includes("Per Instance")&&(0,c.jsxs)("p",{children:[(0,c.jsx)("strong",{children:"Renewal Date:"})," ",e.renewalDate]}),(0,c.jsxs)("p",{children:[(0,c.jsx)("strong",{children:"Last Payment:"})," ",e.lastPayment]}),(0,c.jsx)("h6",{className:"mt-4",children:"Features:"}),(0,c.jsx)("ul",{children:e.features.map(((e,t)=>(0,c.jsx)("li",{children:e},t)))})]})},t)}))]})]})})})]})})})}}}]);
+//# sourceMappingURL=6110.992d8078.chunk.js.map
