@@ -1,7 +1,7 @@
 const db = require("../../db");
 const { format } = require("date-fns");
 const pdfParse = require("pdf-parse");
-const { firestore } = require("../../firebase"); // path adjust karein
+
 require("dotenv").config();
 
 exports.getVendorbrowser = async (req, res) => {
